@@ -2,402 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca293bd-9fc2-4b12-aa9e-fff0830bb28a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/MVP2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/aos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/bootstrap-datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/bootstrap/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/css/mixins/_text-hide.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/flaticon_old.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/icomoon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/ionicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/jquery.timepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/open-iconic-bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/001-seed.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/002-seed.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/003-onion.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/004-horseshoe.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/005-sun.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/006-sunflower.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/007-wheat.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/008-farm.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/009-milk.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/010-boot.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/011-water well.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/012-shovel.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/013-rake.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/014-hat.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/015-axe.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/016-strainer.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/017-barrel.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/018-windmill.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/019-tree.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/020-hose.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/021-trowel.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/022-bucket.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/023-egg.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/024-tractor.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/025-shears.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/026-watering can.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/027-beans.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/028-scythe.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/029-spray.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/030-mushroom.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/031-insect.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/032-sprinkle.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/033-snow.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/034-carrot.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/035-saw.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/036-honey.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/037-leaf blower.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/038-fence.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/039-nut.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/040-temperature.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/041-irrigation.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/042-silo.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/043-watermelon.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/044-fertilizer.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/045-tomato.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/046-honey.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/047-pumpkin.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/048-plant.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/049-rain.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/eps/050-bee.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/font/Flaticon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/font/Flaticon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/font/Flaticon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/font/Flaticon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/font/Flaticon.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/font/_flaticon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/font/flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/font/flaticon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/license/license.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/001-seed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/002-seed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/003-onion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/004-horseshoe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/005-sun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/006-sunflower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/007-wheat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/008-farm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/009-milk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/010-boot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/011-water well.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/012-shovel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/013-rake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/014-hat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/015-axe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/016-strainer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/017-barrel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/018-windmill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/019-tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/020-hose.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/021-trowel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/022-bucket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/023-egg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/024-tractor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/025-shears.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/026-watering can.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/027-beans.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/028-scythe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/029-spray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/030-mushroom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/031-insect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/032-sprinkle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/033-snow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/034-carrot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/035-saw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/036-honey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/037-leaf blower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/038-fence.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/039-nut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/040-temperature.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/041-irrigation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/042-silo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/043-watermelon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/044-fertilizer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/045-tomato.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/046-honey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/047-pumpkin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/048-plant.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/049-rain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/png/050-bee.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/001-seed.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/002-seed.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/003-onion.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/004-horseshoe.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/005-sun.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/006-sunflower.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/007-wheat.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/008-farm.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/009-milk.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/010-boot.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/011-water well.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/012-shovel.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/013-rake.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/014-hat.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/015-axe.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/016-strainer.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/017-barrel.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/018-windmill.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/019-tree.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/020-hose.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/021-trowel.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/022-bucket.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/023-egg.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/024-tractor.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/025-shears.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/026-watering can.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/027-beans.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/028-scythe.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/029-spray.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/030-mushroom.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/031-insect.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/032-sprinkle.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/033-snow.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/034-carrot.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/035-saw.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/036-honey.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/037-leaf blower.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/038-fence.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/039-nut.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/040-temperature.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/041-irrigation.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/042-silo.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/043-watermelon.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/044-fertilizer.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/045-tomato.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/046-honey.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/047-pumpkin.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/048-plant.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/049-rain.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/psd/050-bee.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/001-seed.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/002-seed.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/003-onion.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/004-horseshoe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/005-sun.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/006-sunflower.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/007-wheat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/008-farm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/009-milk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/010-boot.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/011-water well.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/012-shovel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/013-rake.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/014-hat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/015-axe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/016-strainer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/017-barrel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/018-windmill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/019-tree.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/020-hose.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/021-trowel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/022-bucket.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/023-egg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/024-tractor.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/025-shears.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/026-watering can.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/027-beans.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/028-scythe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/029-spray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/030-mushroom.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/031-insect.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/032-sprinkle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/033-snow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/034-carrot.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/035-saw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/036-honey.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/037-leaf blower.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/038-fence.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/039-nut.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/040-temperature.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/041-irrigation.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/042-silo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/043-watermelon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/044-fertilizer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/045-tomato.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/046-honey.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/047-pumpkin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/048-plant.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/049-rain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/flaticon/svg/050-bee.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/flaticon/backup.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/flaticon/font/Flaticon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/flaticon/font/Flaticon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/flaticon/font/Flaticon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/flaticon/font/Flaticon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/flaticon/font/_flaticon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/flaticon/font/flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/flaticon/font/flaticon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/flaticon/license/license.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/icomoon/icomoon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/icomoon/icomoon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/icomoon/icomoon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/icomoon/icomoon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/ionicons/css/_ionicons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/ionicons/css/ionicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/ionicons/fonts/ionicons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/ionicons/fonts/ionicons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/ionicons/fonts/ionicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/ionicons/fonts/ionicons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/ionicons/fonts/ionicons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/open-iconic/open-iconic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/open-iconic/open-iconic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/open-iconic/open-iconic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/open-iconic/open-iconic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/open-iconic/open-iconic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/about.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/bg_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/bg_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/image_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/image_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/image_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/image_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/image_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/image_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/loc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/person_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/person_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/person_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/person_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/person_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/person_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/person_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/person_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/practice-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/aos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/bootstrap-datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/google-map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery-migrate-3.0.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery.animateNumber.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery.easing.1.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery.stellar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery.timepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery.waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/scrollax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_spinners.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_toasts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_overflow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/scss/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/templates/core/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvpCSA/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvpCSA/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvpCSA/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvpCSA/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -428,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/templates/core/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
@@ -468,6 +74,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -487,6 +102,7 @@
         <option value="$PROJECT_DIR$/mvpCSA/settings.py" />
         <option value="$PROJECT_DIR$/core/templates/core/home.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -546,11 +162,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24330357" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24330357" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.29951692" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.29951692" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
@@ -646,6 +263,13 @@
             <element signature="n#style#0;n#a#0;n#div#3;n#div#0;n#div#0;n#section#7;n#body#0;n#html#1;n#!!top" expanded="true" />
             <element signature="e#33138#33144#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
