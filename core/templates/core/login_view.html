@@ -4,7 +4,7 @@
 {% block content %}
     <div class="ftco-section ftco-degree-bg">
         <h1>Login</h1>
-        <form class="site-form" action="{% url 'login' %}" method="post">
+        <form class="site-form" action="{% url 'login_view' %}" method="post">
             {% csrf_token %}
             {{ form  }}
             <input type="submit" value="Login">
