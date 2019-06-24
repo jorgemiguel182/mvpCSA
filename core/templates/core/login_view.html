@@ -3,11 +3,13 @@
 
 {% block content %}
     <div class="ftco-section ftco-degree-bg">
+        <div class="container">
         <h1>Login</h1>
         <form class="site-form" action="{% url 'login_view' %}" method="post">
             {% csrf_token %}
             {{ form  }}
             <input type="submit" value="Login">
+        </div>
         </form>
     </div>
 
