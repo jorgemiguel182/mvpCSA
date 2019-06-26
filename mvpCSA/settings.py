@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'profissional',
+    'empresa',
 ]
 
 AUTH_USER_MODEL = 'core.User'
