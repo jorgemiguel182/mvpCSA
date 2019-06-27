@@ -4,7 +4,7 @@
 {% block content %}
     <div class="ftco-section ftco-degree-bg">
         <h1>Signup</h1>
-        <form class="site-form" action="/profissional/create/" method="post">
+        <form class="site-form" action="/profissional/create/" method="POST">
             {% csrf_token %}
 
             {{ user_form.as_p  }}
