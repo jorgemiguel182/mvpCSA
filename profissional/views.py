@@ -11,13 +11,14 @@ def index(request):
 @login_required
 def create(request):
     if request.method == 'POST':
-        form1 = CreateModelForm(request.user, request.POST)
+        form1 = CreateModelForm(request.POST, request.user)
 
         if form1.is_valid():
           #  user = request.user.id
             prof = form1.save(commit=False)
             prof.user = request.user
             print(prof.categoria)
+            print(prof.valor_hora)
             print(prof)
             prof.save()
 #        print(form1.cleaned_data['categoria'])
