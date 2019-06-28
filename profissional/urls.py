@@ -1,6 +1,5 @@
 from django.urls import path
 from profissional import views
-
 app_name="profissional"
 
 urlpatterns = [

@@ -112,9 +112,6 @@ class Profissional(models.Model):
     observacao = models.CharField(max_length=400)
     descricao = models.TextField(max_length=2000)
     sn_disponivel_procura = models.BooleanField(default=True)
-    sn_consultor = models.BooleanField(null=True, default=False)
+    sn_consultor = models.BooleanField(default=False)
     sn_ativo = models.BooleanField(default=True)
     foto = models.ImageField(null=True)
-
-    def __str__(self):
-        return self.user.first_name
