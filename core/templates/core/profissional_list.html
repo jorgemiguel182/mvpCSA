@@ -1,0 +1,71 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_2.jpg' %});" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5 text-center">
+            <h1 class="mb-3 bread">Encontre o profissional melhor qualificado para sua vaga</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="{% url 'profissional:index' %}">Profissionais</a></span> </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 order-md-last ftco-animate">
+            <div>
+              <p></p>
+            </div>
+            <div>
+              <h1>Profissionais</h1>
+              <ul>
+                {% for prof in object_list %}
+                  <li>{{ prof.user.first_name }}</li>
+                {% empty %}
+                  <li>Fim</li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div>
+              <p>teste</p>
+            </div>
+            <div>
+              <p>teste</p>
+            </div>
+          </div> <!-- .col-md-8 -->
+
+          <div class="col-lg-4 sidebar ftco-animate">
+            <div class="sidebar-box">
+              <form action="#" class="search-form">
+                <div class="form-group">
+                  <span class="icon icon-search"></span>
+                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+                </div>
+              </form>
+            </div>
+            <div class="sidebar-box ftco-animate">
+              <div class="categories">
+                <h3>Categories</h3>
+                <li><a href="{% url 'profissional:create' %}">CRIAR<span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="#">Business Law <span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="#">Criminal Law <span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="#">Insurance Law <span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="#">Emloyment Law <span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="#">Property Law <span class="ion-ios-arrow-forward"></span></a></li>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+{% endblock %}

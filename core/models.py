@@ -106,7 +106,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 
 class Profissional(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, null=True)
     valor_hora = models.CharField(null=True, max_length=10)
     observacao = models.CharField(max_length=400)
