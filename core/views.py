@@ -67,6 +67,6 @@ def login_view(request):
 
 
 def logout_view(request):
-    if request.method == 'POST':
+    if request.method == 'GET':
         logout(request)
         return redirect('home')

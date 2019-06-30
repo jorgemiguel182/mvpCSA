@@ -11,16 +11,17 @@ class Index(ListView):
     model = Profissional
     paginate_by = 15
 
-    #def def_context_data(self, **kwargs):
-    #    context = super().get_context_data(**kwargs)
-    #    context['now'] = timezone.now()
-    #    return context
+
+    def def_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['profissional'] = Profissional.objects.get(user=super.user).exists()
+        return context
 
 
 @login_required(login_url='/login/')
 def create(request):
     if request.method == 'POST':
-        form = CreateProfissionalForm(request.POST)
+        form = CreateProfissionalForm(request.POST, request.FILES)
         #        print(form.cleaned_data)
         print(form)
         print(request.user)

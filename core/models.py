@@ -114,4 +114,4 @@ class Profissional(models.Model):
     sn_disponivel_procura = models.BooleanField(default=True)
     sn_consultor = models.BooleanField(default=False)
     sn_ativo = models.BooleanField(default=True)
-    foto = models.ImageField(null=True)
+    foto = models.ImageField(null=True, blank=True, upload_to='galeria/original')

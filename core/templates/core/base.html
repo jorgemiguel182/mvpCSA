@@ -43,12 +43,14 @@
                   <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
                   <li class="nav-item"><a href="{% url 'profissional:index' %}" class="nav-link">Profissionais</a></li>
                   <li class="nav-item"><a href="{% url 'empresa:index' %}" class="nav-link">Empresas</a></li>
-                  <li class="nav-item"><a href="{% url 'login_view' %}" class="nav-link">Login</a></li>
-                  <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Cadastro</a></li>
 
-                  <ul class="navbar-nav ml-auto">
+                  {% if user.is_authenticated %}
                     <li class="nav-item"><a href="{% url 'logout_view' %}" class="nav-link">Logout</a></li>
-                  </ul>
+                  {% else %}
+                    <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Cadastro</a></li>
+                    <li class="nav-item"><a href="{% url 'login_view' %}" class="nav-link">Login</a></li>
+                  {% endif %}
+                </ul>
 
 
                 </ul>
