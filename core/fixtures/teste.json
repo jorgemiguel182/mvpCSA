@@ -99,7 +99,43 @@
       "model":"core.categoria",
       "pk":1,
       "fields":{
-         "description":"Categoria 1",
+         "description":"Controle Biológico",
+         "creation_date":"2019-06-30T03:18:42.564Z",
+         "upd_date":"2019-06-30T03:18:42.564Z"
+      }
+   },
+   {
+      "model":"core.categoria",
+      "pk":2,
+      "fields":{
+         "description":"Práticas Conservacionistas do Solo",
+         "creation_date":"2019-06-30T03:18:42.564Z",
+         "upd_date":"2019-06-30T03:18:42.564Z"
+      }
+   },
+   {
+      "model":"core.categoria",
+      "pk":3,
+      "fields":{
+         "description":"Sistemas de Irrigação",
+         "creation_date":"2019-06-30T03:18:42.564Z",
+         "upd_date":"2019-06-30T03:18:42.564Z"
+      }
+   },
+   {
+      "model":"core.categoria",
+      "pk":4,
+      "fields":{
+         "description":"Manejo Integrado de Pragas",
+         "creation_date":"2019-06-30T03:18:42.564Z",
+         "upd_date":"2019-06-30T03:18:42.564Z"
+      }
+   },
+   {
+      "model":"core.categoria",
+      "pk":5,
+      "fields":{
+         "description":"Manejo de Culturas",
          "creation_date":"2019-06-30T03:18:42.564Z",
          "upd_date":"2019-06-30T03:18:42.564Z"
       }

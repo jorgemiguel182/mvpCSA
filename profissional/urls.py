@@ -5,6 +5,6 @@ from profissional.views import Index
 app_name="profissional"
 
 urlpatterns = [
-    path('index/', Index.as_view(), name="index"),
+    path('index/', views.index, name="index"),
     path('create/', views.create, name="create"),
 ]
