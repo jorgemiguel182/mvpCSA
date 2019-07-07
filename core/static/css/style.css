@@ -8025,7 +8025,7 @@ h1, h2, h3, h4, h5,
       position: relative;
       top: 0; } }
   .ftco-navbar-light .navbar-brand {
-    color: #6fdb77; }
+    color: #ffffff; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-brand {
         color: #fff; } }
@@ -8038,7 +8038,7 @@ h1, h2, h3, h4, h5,
     padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: #6fdb77;
+    color: #ffffff;
     font-weight: 400;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
@@ -8206,7 +8206,7 @@ h1, h2, h3, h4, h5,
       height: 600px; }
 
 .slider-text h1 {
-  font-size: 50px;
+  font-size: 35px;
   color: #fff;
   line-height: 1.2;
   font-weight: 900; }
@@ -9598,3 +9598,38 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+#wrap{
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Opera */
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #D3D8E8));
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* W3C Markup, IE10 Release Preview */
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #D3D8E8 100%);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.navbar-default .navbar-brand{
+		color:#fff;
+		font-size:30px;
+		font-weight:bold;
+	}
+.form .form-control { margin-bottom: 10px; }
+@media (min-width:768px) {
+	#home{
+		margin-top:50px;
+	}
+	#home .slogan{
+		color: #0e385f;
+		line-height: 29px;
+		font-weight:bold;
+	}
+}
+.med-height-div {
+  height: 100px;
+}

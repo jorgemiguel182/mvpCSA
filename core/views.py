@@ -12,13 +12,14 @@ def signup(request):
     if request.method == 'POST':
         form1 = UserModelForm(request.POST)
 
+        print(form1.errors)
         if form1.is_valid():
             user = form1.save()
             login(request, user)
             return redirect('home')
-    else:
-        form1 = UserModelForm()
-        return render(request, 'core/signup.html', {'user_form': form1})
+
+    form1 = UserModelForm()
+    return render(request, 'core/signup.html', {'user_form': form1})
 
 def login_view(request):
     if request.method == 'POST':

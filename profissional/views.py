@@ -1,28 +1,20 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from django.utils import timezone
-from django.views.generic import ListView
 
 from core.models import Profissional, Categoria
 from profissional.forms import CreateProfissionalForm
 
 @login_required(login_url='/login/')
-class Index(ListView):
-    model = Profissional
-    paginate_by = 15
-
-
-    def def_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['profissional'] = Profissional.objects.get(user=super.user).exists()
-        return context
-
-
-@login_required(login_url='/login/')
 def index(request):
+    print(request.user)
+    try:
+        is_prof = Profissional.objects.get(user = request.user)
+    except Profissional.DoesNotExist:
+        is_prof = None
+
     profissionais = Profissional.objects.all()
     form = CreateProfissionalForm()
-    return render(request, 'profissional/profissional_list.html', {'profissionais' : profissionais, 'form': form})
+    return render(request, 'profissional/profissional_list.html', {'profissionais' : profissionais, 'form': form, 'is_prof': is_prof})
 
 
 @login_required(login_url='/login/')
@@ -47,7 +39,10 @@ def create(request):
                                 sn_disponivel_procura=sn_disponivel_procura, sn_consultor=sn_consultor,
                                 sn_ativo=sn_ativo, foto=foto).save()
 
-            return redirect('/profissional/profissional_list.html')
+            return redirect('profissional:index')
     else:
         form = CreateProfissionalForm();
         return render(request, 'profissional/create.html', {'user_form': form})
+
+def detalhe(request):
+    return render(request, 'profissional/prof_prof_detalhes.html')

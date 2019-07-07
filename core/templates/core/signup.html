@@ -2,14 +2,124 @@
 {% load static %}
 
 {% block content %}
+
+    <div class="hero-wrap  med-height-div" style="background-image: url({% static 'images/cad3.jpg' %}); " data-stellar-background-ratio="0.6">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+            	<span>Faça seu cadastro agora mesmo!</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="ftco-section ftco-degree-bg">
         <h1>Signup</h1>
-        <form class="site-form" action="/signup/" method="post">
+
+        <div class="container" id="wrap">
+	        <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+
+        <form class="form" action="/signup/" method="post">
             {% csrf_token %}
 
-            {{ user_form.as_p  }}
-            <input type="submit" value="Signup">
+            {% if user_form.non_field_errors %}
+                <div class="alert alert-danger" role="alert">
+                  {% for error in form.non_field_errors %}
+                    {{ error }}
+                  {% endfor %}
+                </div>
+            {% endif %}
+
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <div class="form-row">
+                    <label for="{{ user_form.username.id_for_label}}">Usuario</label>
+                    <input id="{{ user_form.username.id_for_label }}" name="{{ user_form.username.name }}" type="text"
+                       class="form-control {% if user_form.username.errors %}is-invalid{% endif %}"  placeholder="Usuário"
+                       required="" value="{{ user_form.username.value|default:'' }}" />
+                    {{ user_form.username.error}}
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-6">
+                <div class="form-row">
+                <label for=" {{ user_form.email.id_for_label }} ">Email address</label>
+                <input id="{{ user_form.email.id_for_label }}" name="{{ user_form.email.name }}" type="email"
+                   class="form-control {% if user_form.email.errors %}is-invalid{% endif %}"  placeholder="Insira seu e-mail"
+                   required="" value="{{ user_form.email.value|default:'' }}" />
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            </div>
+            </div>
+            <div class="form-group container">
+                <div class="form-row">
+                <label for="{{ user_form.first_name.id_for_label}}">Nome</label>
+                <input id="{{ user_form.first_name.id_for_label }}" name="{{ user_form.first_name.name }}" type="text"
+                   class="form-control {% if user_form.first_name.errors %}is-invalid{% endif %}"  placeholder="Nome"
+                   required="" value="{{ user_form.first_name.value|default:'' }}" />
+                {{ user_form.first_name.error}}
+                </div>
+            </div>
+
+            <div class="form-group container">
+                <div class="form-row">
+                <label for="{{ user_form.last_name.id_for_label}}">Sobrenome</label>
+                <input id="{{ user_form.last_name.id_for_label }}" name="{{ user_form.last_name.name }}" type="text"
+                   class="form-control {% if user_form.last_name.errors %}is-invalid{% endif %}"  placeholder="Sobrenome"
+                   required="" value="{{ user_form.last_name.value|default:'' }}" />
+                {{ user_form.last_name.error}}
+                </div>
+            </div>
+
+            <div class="form-group container">
+                <div class="form-row">
+                <label for="{{ user_form.CPF.id_for_label}}">CPF</label>
+                <input id="{{ user_form.CPF.id_for_label }}" name="{{ user_form.CPF.name }}" type="text"
+                   class="form-control {% if user_form.CPF.errors %}is-invalid{% endif %}"  placeholder="CPF"
+                   required="" value="{{ user_form.CPF.value|default:'' }}" />
+                {{ user_form.CPF.error}}
+                </div>
+            </div>
+
+            <div class="form-group container">
+                <div class="form-row">
+                <label for="{{ user_form.dt_nascimento.id_for_label}}">Data de Nascimento</label>
+                <input id="{{ user_form.dt_nascimento.id_for_label }}" name="{{ user_form.dt_nascimento.name }}" type="date"
+                   class="form-control {% if user_form.dt_nascimento.errors %}is-invalid{% endif %}"  placeholder="Data de nascimento"
+                   required="" value="{{ user_form.dt_nascimento.value|default:'' }}" />
+                {{ user_form.dt_nascimento.error}}
+                </div>
+            </div>
+
+             <div class="form-group container">
+                 <div class="form-row">
+                <label for="{{ user_form.password1.id_for_label}}">Senha</label>
+                <input id="{{ user_form.password1.id_for_label }}" name="{{ user_form.password1.name }}" type="password"
+                   class="form-control {% if user_form.password1.errors %}is-invalid{% endif %}"  placeholder="Insira sua senha."
+                   required="" value="{{ user_form.password1.value|default:'' }}" />
+                {{ user_form.password1.error}}
+                </div>
+            </div>
+
+            <div class="form-group container">
+                <div class="form-row">
+                <label for="{{ user_form.password2.id_for_label}}">Repita sua Senha</label>
+                <input id="{{ user_form.password2.id_for_label }}" name="{{ user_form.password2.name }}" type="password"
+                   class="form-control {% if user_form.password2.errors %}is-invalid{% endif %}"  placeholder="Repita sua senha."
+                   required="" value="{{ user_form.password2.value|default:'' }}" />
+                {{ user_form.password2.error}}
+                </div>
+            </div>
+<button type="submit" class="btn btn-success"> Salvar </button>
         </form>
+<!--                       <input type="submit" value="Signup" class="btn btn-success"/>-->
+
+                </div>
+            </div>
     </div>
 
 {% endblock %}
