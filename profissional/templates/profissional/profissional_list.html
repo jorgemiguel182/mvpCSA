@@ -5,7 +5,7 @@
 <div>
   <h1>Profissionais</h1>
   <div class="container-fluid">
-    {% for prof in profissionais %}
+    {% for prof in queryset %}
 
     <div class="row  border rounded">
 <!--                    <div class="col-12 col-md-2">.col-12 .col-md-8</div>-->
@@ -19,7 +19,7 @@
             </div>
           </div>
           <div class="col-10 col-sm-10">
-            <h4>{{ prof.user.first_name}}</h4>
+            <a class="btn btn-default" href="{% url 'profissional:detalhe' pk=prof.pk %}"><h4>{{ prof.user.first_name}}</h4></a>
             <p>{{ prof.categoria }}</p>
             {% if prof.sn_consultor %}
               <label>Consultor</label>

@@ -3,15 +3,15 @@
 
 {% block content %}
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_2.jpg' %});" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap med-height-div" style="background-image: url({% static 'images/cad1.jpg' %});" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
-        <div class="row no-gutters slider-text align-items-end justify-content-center">
-          <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h1 class="mb-3 bread">Encontre o profissional melhor qualificado para sua vaga</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="{% url 'profissional:index' %}">Profissionais</a></span> </p>
-          </div>
-        </div>
+<!--        <div class="row no-gutters slider-text align-items-end justify-content-center">-->
+<!--          <div class="col-md-9 ftco-animate pb-5 text-center">-->
+<!--            <h1 class="mb-3 bread">Encontre o profissional melhor qualificado para sua vaga</h1>-->
+<!--            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="{% url 'profissional:index' %}">Profissionais</a></span> </p>-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
     </section>
 
@@ -27,7 +27,7 @@
               <form action="#" class="search-form">
                 <div class="form-group">
                   <span class="icon icon-search"></span>
-                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+                  <input type="search" class="form-control" name="categoriaSearch" placeholder="Pesquise aqui por categorias!">
                 </div>
               </form>
             </div>
@@ -41,15 +41,15 @@
                   </li>
                 {% else %}
                   <li>
-                    <a href="#">Meu Perfil Profissional<span class="ion-ios-arrow-forward"></span></a>
+                    <a href="{% url 'profissional:edit' pk=prof.pk %}">Meu Perfil Profissional<span class="ion-ios-arrow-forward"></span></a>
                   </li>
                 {% endif %}
                 <h3>Categories</h3>
-                <li><a href="#">Controle Biológico <span class="ion-ios-arrow-forward"></span></a></li>
-                <li><a href="#">Práticas Conservacionistas do Solo <span class="ion-ios-arrow-forward"></span></a></li>
-                <li><a href="#">Sistemas de Irrigação<span class="ion-ios-arrow-forward"></span></a></li>
-                <li><a href="#">Manejo Integrado de Pragas <span class="ion-ios-arrow-forward"></span></a></li>
-                <li><a href="#">Manejo de Culturas <span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="/profissional/index/?categoriaSearch=Controle Biológico">Controle Biológico <span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="/profissional/index/?categoriaSearch=Práticas Conservacionistas do Solo">Práticas Conservacionistas do Solo <span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="/profissional/index/?categoriaSearch=Sistemas de Irrigação">Sistemas de Irrigação<span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="/profissional/index/?categoriaSearch=Manejo Integrado de Pragas">Manejo Integrado de Pragas <span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a href="/profissional/index/?categoriaSearch=Manejo de Culturas">Manejo de Culturas <span class="ion-ios-arrow-forward"></span></a></li>
               </div>
             </div>
 

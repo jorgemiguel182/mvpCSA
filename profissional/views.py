@@ -1,21 +1,36 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from core.models import Profissional, Categoria
 from profissional.forms import CreateProfissionalForm
 
+def Is_prof(user):
+    try:
+        is_prof = Profissional.objects.get(user=user)
+    except Profissional.DoesNotExist:
+        is_prof = None
+    return is_prof
+
 @login_required(login_url='/login/')
 def index(request):
     print(request.user)
-    try:
-        is_prof = Profissional.objects.get(user = request.user)
-    except Profissional.DoesNotExist:
-        is_prof = None
+    is_prof = Is_prof(request.user)
+    print(is_prof)
+
+    ##FILTER
+    categoria = Categoria.objects.all()
+    qs = Profissional.objects.all()
+    categoriaSearch = request.GET.get('categoriaSearch')
+
+    if categoriaSearch != '' and categoriaSearch is not None:
+        categoria = categoria.filter(description__icontains=categoriaSearch)
+
+        qs = qs.filter(categoria__in=categoria)
+
+
 
     profissionais = Profissional.objects.all()
-    form = CreateProfissionalForm()
-    return render(request, 'profissional/profissional_list.html', {'profissionais' : profissionais, 'form': form, 'is_prof': is_prof})
-
+    return render(request, 'profissional/profissional_list.html',  {'queryset':qs, 'profissionais' : profissionais, 'is_prof': is_prof})
 
 @login_required(login_url='/login/')
 def create(request):
@@ -44,5 +59,15 @@ def create(request):
         form = CreateProfissionalForm();
         return render(request, 'profissional/create.html', {'user_form': form})
 
-def detalhe(request):
-    return render(request, 'profissional/prof_prof_detalhes.html')
+@login_required(login_url='/login/')
+def detalhe(request, pk):
+    prof = get_object_or_404(Profissional, pk=pk)
+    is_prof = Is_prof(request.user)
+    if request.method == 'POST':
+        pass
+
+    return render(request, 'profissional/prof_prof_detalhes.html', {'prof': prof, 'is_prof': is_prof})
+
+@login_required(login_url='/login/')
+def edit(request, pk):
+    pass
