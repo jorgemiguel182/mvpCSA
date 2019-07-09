@@ -114,7 +114,7 @@ class Profissional(models.Model):
     sn_disponivel_procura = models.BooleanField(default=True)
     sn_consultor = models.BooleanField(default=False)
     sn_ativo = models.BooleanField(default=True)
-    foto = models.ImageField(upload_to='media/%m/%d',  blank=True)
+    foto = models.ImageField(upload_to='media/%m/%d', null=True,  blank=True)
 
     # def __str__(self):
     #     return self.user.first_name

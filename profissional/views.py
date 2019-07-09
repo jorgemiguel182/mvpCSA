@@ -2,7 +2,8 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 
 from core.models import Profissional, Categoria
-from profissional.forms import CreateProfissionalForm
+from profissional.forms import CreateProfissionalForm, EditProfissionalForm
+
 
 def Is_prof(user):
     try:
@@ -13,21 +14,17 @@ def Is_prof(user):
 
 @login_required(login_url='/login/')
 def index(request):
-    print(request.user)
     is_prof = Is_prof(request.user)
-    print(is_prof)
+    print(is_prof.pk)
 
     ##FILTER
     categoria = Categoria.objects.all()
     qs = Profissional.objects.all()
     categoriaSearch = request.GET.get('categoriaSearch')
-
     if categoriaSearch != '' and categoriaSearch is not None:
         categoria = categoria.filter(description__icontains=categoriaSearch)
 
         qs = qs.filter(categoria__in=categoria)
-
-
 
     profissionais = Profissional.objects.all()
     return render(request, 'profissional/profissional_list.html',  {'queryset':qs, 'profissionais' : profissionais, 'is_prof': is_prof})
@@ -70,4 +67,13 @@ def detalhe(request, pk):
 
 @login_required(login_url='/login/')
 def edit(request, pk):
-    pass
+    is_prof = Is_prof(request.user)
+    prof = get_object_or_404(Profissional, pk=pk)
+    if request.method == "POST":
+        form = EditProfissionalForm(request.POST, instance=prof)
+        if form.is_valid():
+            prof = form.save()
+            return redirect('profissional/index.html')
+    else:
+        form = EditProfissionalForm(instance=prof)
+    return render(request, 'profissional/user_prof_detalhes.html', {'form': form, 'is_prof': is_prof})

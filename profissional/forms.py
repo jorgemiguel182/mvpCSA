@@ -11,6 +11,7 @@ class CreateProfissionalForm(forms.Form):
     sn_ativo = forms.BooleanField(label="Cadastro ativo.", initial=True, required=False)
     foto = forms.ImageField(label="Foto de perfil", required=False)
 
+
 class EditProfissionalForm(forms.ModelForm):
 
     class Meta:
