@@ -7,7 +7,14 @@
     <div>
       <h1>Detalhes</h1>
       <div class="container-fluid">
-          {{prof.user.first_name}}
+          <div class="mediadetalhe col-4 center">
+              <img class="mr-3 img-fluid rounded-circle" src="/media/{{prof.foto}}">
+          </div>
+          <div>{{prof.user.first_name}}</div>
+          <div>{{prof.categoria}}</div>
+          <div>{{prof.valor_hora}}</div>
+          <div>{{prof.observacao}}</div>
+          <div>{{prof.descricao}}</div>
       </div>
     </div>
 </div>

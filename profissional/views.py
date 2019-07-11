@@ -6,6 +6,7 @@ from profissional.forms import CreateProfissionalForm, EditProfissionalForm
 
 
 def Is_prof(user):
+    is_prof = None
     try:
         is_prof = Profissional.objects.get(user=user)
     except Profissional.DoesNotExist:
@@ -15,16 +16,17 @@ def Is_prof(user):
 @login_required(login_url='/login/')
 def index(request):
     is_prof = Is_prof(request.user)
-    print(is_prof.pk)
+   # print(is_prof.pk)
 
     ##FILTER
     categoria = Categoria.objects.all()
     qs = Profissional.objects.all()
     categoriaSearch = request.GET.get('categoriaSearch')
+
     if categoriaSearch != '' and categoriaSearch is not None:
         categoria = categoria.filter(description__icontains=categoriaSearch)
-
         qs = qs.filter(categoria__in=categoria)
+    ##ENDFILTER
 
     profissionais = Profissional.objects.all()
     return render(request, 'profissional/profissional_list.html',  {'queryset':qs, 'profissionais' : profissionais, 'is_prof': is_prof})
@@ -60,6 +62,7 @@ def create(request):
 def detalhe(request, pk):
     prof = get_object_or_404(Profissional, pk=pk)
     is_prof = Is_prof(request.user)
+    print(is_prof, is_prof.pk, pk)
     if request.method == 'POST':
         pass
 
@@ -73,7 +76,7 @@ def edit(request, pk):
         form = EditProfissionalForm(request.POST, instance=prof)
         if form.is_valid():
             prof = form.save()
-            return redirect('profissional/index.html')
+            return redirect('/profissional/index',  {'is_prof': is_prof})
     else:
         form = EditProfissionalForm(instance=prof)
     return render(request, 'profissional/user_prof_detalhes.html', {'form': form, 'is_prof': is_prof})

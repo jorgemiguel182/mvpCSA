@@ -35,14 +35,15 @@
               <div class="categories">
                 <h3>Área Profissional</h3>
 
-                {% if is_prof == None %}
-                  <li>
-                    <a href="{% url 'profissional:create' %}">Criar Perfil Profissional<span class="ion-ios-arrow-forward"></span></a>
-                  </li>
-                {% else %}
+                {% if is_prof %}
                   <li>
                     <a href="{% url 'profissional:edit' pk=is_prof.pk %}">Meu Perfil Profissional<span class="ion-ios-arrow-forward"></span></a>
                   </li>
+                {% else %}
+                  <li>
+                    <a href="{% url 'profissional:create' %}">Criar Perfil Profissional<span class="ion-ios-arrow-forward"></span></a>
+                  </li>
+
                 {% endif %}
                 <h3>Categories</h3>
                 <li><a href="/profissional/index/?categoriaSearch=Controle Biológico">Controle Biológico <span class="ion-ios-arrow-forward"></span></a></li>

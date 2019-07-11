@@ -7,19 +7,19 @@
   <div class="container-fluid">
     {% for prof in queryset %}
 
-    <div class="row  border rounded">
+    <div class="row borda-div-prof">
 <!--                    <div class="col-12 col-md-2">.col-12 .col-md-8</div>-->
 <!--                    <div class="col-6 col-md-10"></div>-->
 
       <div class="col-sm-9">
         <div class="row">
-          <div class="col-2 col-sm-2  border rounded">
+          <div class="col-3 col-sm-3 ">
             <div class="media" >
               <img class="mr-3 img-fluid rounded-circle" src="/media/{{prof.foto}}" alt="Generic placeholder image">
             </div>
           </div>
-          <div class="col-10 col-sm-10">
-            <a class="btn btn-default" href="{% url 'profissional:detalhe' pk=prof.pk %}"><h4>{{ prof.user.first_name}}</h4></a>
+          <div class="col-9 col-sm-9">
+            <a class="" href="{% url 'profissional:detalhe' pk=prof.pk %}"><h4>{{ prof.user.first_name}}</h4></a>
             <p>{{ prof.categoria }}</p>
             {% if prof.sn_consultor %}
               <label>Consultor</label>
