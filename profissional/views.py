@@ -1,23 +1,24 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 
-from core.models import Profissional, Categoria
+from core.models import Profissional, Categoria, User
 from profissional.forms import CreateProfissionalForm, EditProfissionalForm
 
 
-def Is_prof(user):
-    is_prof = None
-    try:
-        is_prof = Profissional.objects.get(user=user)
-    except Profissional.DoesNotExist:
+def Is_prof(request):
+    user = request.user
+    if user.pk is not None:
+        is_prof = User.objects.filter(pk = request.user.pk).exists()
+        try:
+            is_prof = Profissional.objects.get(user=request.user)
+        except Profissional.DoesNotExist:
+            is_prof = None
+    else:
         is_prof = None
     return is_prof
 
 @login_required(login_url='/login/')
 def index(request):
-    is_prof = Is_prof(request.user)
-   # print(is_prof.pk)
-
     ##FILTER
     categoria = Categoria.objects.all()
     qs = Profissional.objects.all()
@@ -29,7 +30,7 @@ def index(request):
     ##ENDFILTER
 
     profissionais = Profissional.objects.all()
-    return render(request, 'profissional/profissional_list.html',  {'queryset':qs, 'profissionais' : profissionais, 'is_prof': is_prof})
+    return render(request, 'profissional/profissional_list.html',  {'queryset':qs, 'profissionais' : profissionais})
 
 @login_required(login_url='/login/')
 def create(request):
@@ -61,22 +62,19 @@ def create(request):
 @login_required(login_url='/login/')
 def detalhe(request, pk):
     prof = get_object_or_404(Profissional, pk=pk)
-    is_prof = Is_prof(request.user)
-    print(is_prof, is_prof.pk, pk)
     if request.method == 'POST':
         pass
 
-    return render(request, 'profissional/prof_prof_detalhes.html', {'prof': prof, 'is_prof': is_prof})
+    return render(request, 'profissional/prof_prof_detalhes.html', {'prof': prof })
 
 @login_required(login_url='/login/')
 def edit(request, pk):
-    is_prof = Is_prof(request.user)
     prof = get_object_or_404(Profissional, pk=pk)
     if request.method == "POST":
         form = EditProfissionalForm(request.POST, instance=prof)
         if form.is_valid():
             prof = form.save()
-            return redirect('/profissional/index',  {'is_prof': is_prof})
+            return redirect('/profissional/index')
     else:
         form = EditProfissionalForm(instance=prof)
-    return render(request, 'profissional/user_prof_detalhes.html', {'form': form, 'is_prof': is_prof})
+    return render(request, 'profissional/user_prof_detalhes.html', {'form': form})

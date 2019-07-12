@@ -1,12 +1,16 @@
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout
 from core.forms import UserModelForm
+from core.models import Profissional
 
 
 def home(request):
-    return render(request, 'core/home.html')
+    profis = Profissional.objects.all()[:4]
+    print(profis)
+    return render(request, 'core/home.html', {'profis':profis})
 
 def signup(request):
     if request.method == 'POST':
@@ -17,7 +21,8 @@ def signup(request):
             user = form1.save()
             login(request, user)
             return redirect('home')
-
+        else:
+            messages.error(request,"Error")
     form1 = UserModelForm()
     return render(request, 'core/signup.html', {'user_form': form1})
 
@@ -35,4 +40,4 @@ def login_view(request):
 def logout_view(request):
     if request.method == 'GET':
         logout(request)
-        return redirect('home')
+        return redirect('profissional:index')

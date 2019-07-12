@@ -1,0 +1,62 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+ <section class="hero-wrap med-height-div" style="background-image: url({% static 'images/cad1.jpg' %});" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+<!--        <div class="row no-gutters slider-text align-items-end justify-content-center">-->
+<!--          <div class="col-md-9 ftco-animate pb-5 text-center">-->
+<!--            <h1 class="mb-3 bread">Encontre o profissional melhor qualificado para sua vaga</h1>-->
+<!--            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="{% url 'profissional:index' %}">Profissionais</a></span> </p>-->
+<!--          </div>-->
+<!--        </div>-->
+      </div>
+    </section>
+<section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+
+          {% block emp_content %}
+          {% endblock %}
+          <div class="col-lg-3 sidebar ftco-animate">
+            <div class="sidebar-box">
+              <form action="#" class="search-form">
+                <div class="form-group">
+                  <span class="icon icon-search"></span>
+                  <input type="search" class="form-control" name="categoriaSearch" placeholder="Pesquise aqui por categorias!">
+                </div>
+              </form>
+            </div>
+            <div class="sidebar-box ftco-animate">
+              <div class="categories">
+                <h3>Área Profissional</h3>
+
+<!--                {% if is_prof1.pk %}-->
+<!--                  <li>-->
+<!--                    <a href="{% url 'profissional:edit' pk=is_prof1.pk %}">Meu Perfil Profissional<span class="ion-ios-arrow-forward"></span></a>-->
+<!--                  </li>-->
+<!--                {% else %}-->
+<!--                  <li>-->
+<!--                    <a href="{% url 'profissional:create' %}">Criar Perfil Profissional<span class="ion-ios-arrow-forward"></span></a>-->
+<!--                  </li>-->
+
+<!--                {% endif %}-->
+<!--                <h3>Categories</h3>-->
+<!--                <li><a href="/profissional/index/?categoriaSearch=Controle Biológico">Controle Biológico <span class="ion-ios-arrow-forward"></span></a></li>-->
+<!--                <li><a href="/profissional/index/?categoriaSearch=Práticas Conservacionistas do Solo">Práticas Conservacionistas do Solo <span class="ion-ios-arrow-forward"></span></a></li>-->
+<!--                <li><a href="/profissional/index/?categoriaSearch=Sistemas de Irrigação">Sistemas de Irrigação<span class="ion-ios-arrow-forward"></span></a></li>-->
+<!--                <li><a href="/profissional/index/?categoriaSearch=Manejo Integrado de Pragas">Manejo Integrado de Pragas <span class="ion-ios-arrow-forward"></span></a></li>-->
+<!--                <li><a href="/profissional/index/?categoriaSearch=Manejo de Culturas">Manejo de Culturas <span class="ion-ios-arrow-forward"></span></a></li>-->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+{% endblock %}

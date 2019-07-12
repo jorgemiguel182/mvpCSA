@@ -35,9 +35,9 @@
               <div class="categories">
                 <h3>Área Profissional</h3>
 
-                {% if is_prof %}
+                {% if is_prof1.pk %}
                   <li>
-                    <a href="{% url 'profissional:edit' pk=is_prof.pk %}">Meu Perfil Profissional<span class="ion-ios-arrow-forward"></span></a>
+                    <a href="{% url 'profissional:edit' pk=is_prof1.pk %}">Meu Perfil Profissional<span class="ion-ios-arrow-forward"></span></a>
                   </li>
                 {% else %}
                   <li>
