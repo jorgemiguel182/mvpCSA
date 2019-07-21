@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'zxx5*tu8_o+ci5h99)86@y$0p9a@klg_*usx!57i**&s0%qa8w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'ec2-18-216-121-160.us-east-2.compute.amazonaws.com',]
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'ec2-3-17-150-189.us-east-2.compute.amazonaws.com',]
 
 
 # Application definition
@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.environ.get('DB_NAME', 'mvpcsa'),
         'USER': os.environ.get('DB_USER', 'postgres'),
-        'PASSWORD': os.environ.get('DB_PASS',''),
+        'PASSWORD': os.environ.get('DB_PASS','massacrat1@n'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
